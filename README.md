@@ -1,2 +1,3 @@
 # DOMODash-Angular
-Created with CodeSandbox
+
+domotic dashboard board wannabe.
