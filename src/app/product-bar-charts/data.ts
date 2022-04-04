@@ -1,4 +1,4 @@
-export var productSales = [
+export var data_1 = [
   {
     name: "book",
     value: 5001
@@ -21,7 +21,7 @@ export var productSales = [
   }
 ];
 
-export var productSalesMulti = [
+export var data_2 = [
   {
     name: "book",
     series: [

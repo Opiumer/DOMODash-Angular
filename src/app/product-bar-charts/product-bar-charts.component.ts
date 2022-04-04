@@ -1,5 +1,7 @@
 import { Component, OnInit } from "@angular/core";
 
+import { data_1, data_2 } from './data';
+
 @Component({
   selector: "app-product-bar-charts",
   templateUrl: "./product-bar-charts.component.html",
@@ -7,6 +9,10 @@ import { Component, OnInit } from "@angular/core";
 })
 export class ProductBarChartsComponent implements OnInit {
   options: any;
+
+  data_1: any[];
+  data_2: any[];
+
   constructor() {}
 
   ngOnInit(): void {
@@ -38,13 +44,13 @@ export class ProductBarChartsComponent implements OnInit {
         {
           name: 'bar',
           type: 'bar',
-          data: data1,
+          data: data_1,
           animationDelay: (idx) => idx * 10,
         },
         {
           name: 'bar2',
           type: 'line',
-          data: data2,
+          data: data_2,
           animationDelay: (idx) => idx * 10 + 100,
         },
       ],
