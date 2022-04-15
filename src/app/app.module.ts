@@ -8,12 +8,13 @@ import { CardComponent } from "./Card/card.component";
 import { ProductBarChartsComponent } from "./product-bar-charts/product-bar-charts.component";
 import { CardGridComponent } from "./CardGrid/cardgrid.component";
 import { MatToolbarModule } from "@angular/material/toolbar";
-import { MatIconModule, MatIconRegistry } from "@angular/material/icon";
+import { MatIconModule } from "@angular/material/icon";
 import { HttpClientModule } from "@angular/common/http";
 import { DatePipe } from "@angular/common";
 import { MatCardModule } from "@angular/material/card";
 import { NgxEchartsModule } from "ngx-echarts";
 import { MatGridListModule } from "@angular/material/grid-list";
+import {MatButtonModule} from '@angular/material/button';
 
 @NgModule({
   declarations: [
@@ -33,9 +34,10 @@ import { MatGridListModule } from "@angular/material/grid-list";
       echarts: () => import("echarts")
     }),
     NgbModule,
-    MatGridListModule
+    MatGridListModule,
+    MatButtonModule
   ],
-  providers: [MatIconRegistry, DatePipe],
+  providers: [DatePipe],
   bootstrap: [AppComponent]
 })
 export class AppModule {}

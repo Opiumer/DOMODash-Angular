@@ -30,6 +30,7 @@ export class ProductBarChartsComponent implements OnInit {
       legend: {
         data: ['bar', 'bar2'],
         align: 'left',
+        top: 'bottom',
       },
       tooltip: {},
       xAxis: {
@@ -44,13 +45,13 @@ export class ProductBarChartsComponent implements OnInit {
         {
           name: 'bar',
           type: 'bar',
-          data: data_1,
+          data: data1,
           animationDelay: (idx) => idx * 10,
         },
         {
           name: 'bar2',
           type: 'line',
-          data: data_2,
+          data: data2,
           animationDelay: (idx) => idx * 10 + 100,
         },
       ],
