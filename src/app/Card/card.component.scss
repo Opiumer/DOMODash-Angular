@@ -17,18 +17,20 @@
 }
 
 .mat-card-title {
+  font-size: 14px;
+  text-transform: uppercase;
+  color:gray;
   margin-left: 10px;
 }
 
 .button_group_container {
+  color: gray;
   width: 50px;
   display: inline-flex;
   justify-content: space-around;
 }
-.mat-mini-fab {
-  width: 20px;
-  height: 20px;
-  color: white;
-  background-color: #33373d; 
+
+.mat-icon {
+  font-size: 17px;
 }
 

@@ -13,8 +13,7 @@ import { HttpClientModule } from "@angular/common/http";
 import { DatePipe } from "@angular/common";
 import { MatCardModule } from "@angular/material/card";
 import { NgxEchartsModule } from "ngx-echarts";
-import { MatGridListModule } from "@angular/material/grid-list";
-import {MatButtonModule} from '@angular/material/button';
+import { MatButtonModule } from "@angular/material/button";
 
 @NgModule({
   declarations: [
@@ -34,7 +33,6 @@ import {MatButtonModule} from '@angular/material/button';
       echarts: () => import("echarts")
     }),
     NgbModule,
-    MatGridListModule,
     MatButtonModule
   ],
   providers: [DatePipe],
