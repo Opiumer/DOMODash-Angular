@@ -14,6 +14,7 @@ import { DatePipe } from "@angular/common";
 import { MatCardModule } from "@angular/material/card";
 import { NgxEchartsModule } from "ngx-echarts";
 import { MatButtonModule } from "@angular/material/button";
+import { MatSlideToggleModule } from "@angular/material/slide-toggle";
 
 @NgModule({
   declarations: [
@@ -33,7 +34,8 @@ import { MatButtonModule } from "@angular/material/button";
       echarts: () => import("echarts")
     }),
     NgbModule,
-    MatButtonModule
+    MatButtonModule,
+    MatSlideToggleModule
   ],
   providers: [DatePipe],
   bootstrap: [AppComponent]

@@ -1,11 +1,12 @@
 .toolbar {
   height: 40px;
-  background-color : #484f57;
-  color: white;
   display: inline-flex;
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
+
+  background-color: #484f57;
+  color: white;
 }
 
 .time {
